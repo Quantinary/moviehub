@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Watch - MovieHub
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <nav class="navbar">
+   <div class="nav-container">
+    <a class="logo" href="index.html">
+     <i class="fa-solid fa-film">
+     </i>
+     <span>
+      MovieHub
+     </span>
+    </a>
+    <button class="menu-btn" id="menu-toggle" type="button">
+     <i class="fa-solid fa-bars">
+     </i>
+    </button>
+    <div class="nav-menu" id="nav-menu">
+     <a class="nav-link" href="index.html">
+      Home
+     </a>
+     <a class="nav-link" href="movies.html">
+      Movies
+     </a>
+     <a class="nav-link" href="top.html">
+      Top
+     </a>
+     <a class="nav-link active" href="watch.html">
+      Watch
+     </a>
+     <a class="nav-link" href="favorites.html">
+      Favorites
+     </a>
+     <a class="nav-link" href="ratings.html">
+      Ratings
+     </a>
+     <a class="nav-link" href="download.html">
+      Download
+     </a>
+     <a class="nav-link" href="contact.html">
+      Contact
+     </a>
+    </div>
+    <div class="nav-actions">
+     <button class="theme-btn" id="theme-toggle" type="button">
+      <i class="fa-solid fa-moon">
+      </i>
+     </button>
+     <div class="search-box">
+      <input id="search-input" placeholder="Search movies..." type="text"/>
+      <button type="button">
+       <i class="fa-solid fa-search">
+       </i>
+      </button>
+     </div>
+     <button class="login-btn" type="button">
+      Sign In
+     </button>
+    </div>
+   </div>
+  </nav>
+  <main>
+   <section class="section">
+    <div class="section-header">
+     <div>
+      <h1>
+       Watch Trailer
+      </h1>
+      <p>
+       The selected movie opens here with its own video.
+      </p>
+     </div>
+    </div>
+    <div class="watch-layout" id="player-section">
+    </div>
+   </section>
+   <section class="section">
+    <div class="section-header">
+     <h2>
+      Choose Another Movie
+     </h2>
+    </div>
+    <div class="content-grid" id="watch-grid">
+    </div>
+   </section>
+  </main>
+  <div class="modal" id="auth-modal">
+   <div class="modal-card">
+    <div class="modal-head">
+     <h2>
+      MovieHub Account
+     </h2>
+     <button class="icon-btn" id="auth-close" type="button">
+      <i class="fa-solid fa-xmark">
+      </i>
+     </button>
+    </div>
+    <div class="tabs">
+     <button class="tab-btn active" id="tab-in" type="button">
+      Sign In
+     </button>
+     <button class="tab-btn" id="tab-up" type="button">
+      Sign Up
+     </button>
+    </div>
+    <form id="signin-form" novalidate="">
+     <div class="field">
+      <label>
+       Email
+      </label>
+      <input id="signin-email" type="text"/>
+      <div class="error" id="signin-email-error">
+      </div>
+     </div>
+     <div class="field">
+      <label>
+       Password
+      </label>
+      <input id="signin-pass" type="password"/>
+      <div class="error" id="signin-pass-error">
+      </div>
+     </div>
+     <div class="error" id="signin-error">
+     </div>
+     <button class="btn-primary" style="width:100%" type="submit">
+      Login
+     </button>
+    </form>
+    <form class="hide" id="signup-form" novalidate="">
+     <div class="field">
+      <label>
+       Name
+      </label>
+      <input id="signup-name" type="text"/>
+      <div class="error" id="signup-name-error">
+      </div>
+     </div>
+     <div class="field">
+      <label>
+       Email
+      </label>
+      <input id="signup-email" type="text"/>
+      <div class="error" id="signup-email-error">
+      </div>
+     </div>
+     <div class="field">
+      <label>
+       Password
+      </label>
+      <input id="signup-pass" type="password"/>
+      <div class="error" id="signup-pass-error">
+      </div>
+     </div>
+     <button class="btn-primary" style="width:100%" type="submit">
+      Create Account
+     </button>
+    </form>
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="footer-container">
+    <div>
+     <div class="logo">
+      <i class="fa-solid fa-film">
+      </i>
+      <span>
+       MovieHub
+      </span>
+     </div>
+    </div>
+    <div class="footer-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="movies.html">
+      Movies
+     </a>
+     <a href="watch.html">
+      Watch
+     </a>
+     <a href="favorites.html">
+      Favorites
+     </a>
+     <a href="contact.html">
+      Contact
+     </a>
+    </div>
+    <div class="footer-social">
+     <a href="#">
+      <i class="fa-brands fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fa-brands fa-instagram">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fa-brands fa-facebook">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fa-brands fa-youtube">
+      </i>
+     </a>
+     <p>
+      © 2026 MovieHub
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
